@@ -1,0 +1,88 @@
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
+#pragma comment(lib, "Ws2_32.lib")
+
+#include <WinSock2.h>
+#include <msgpack.hpp>
+#include <string>
+#include <iostream>
+#include <sstream>
+
+// this is our proto of foo
+//#include "foo.pb.h"
+
+int main(int argc, char **argv)
+{
+	/*
+	  Step 1. creating msg to send
+	*/
+	msgpack::type::tuple<int, bool, std::string> src(1, true, "example");
+
+	// serialize the object into the buffer.
+	// any classes that implements write(const char*,size_t) can be a buffer.
+	std::stringstream buffer;
+	msgpack::pack(buffer, src);
+
+	// send the buffer ...
+	buffer.seekg(0);
+
+	// deserialize the buffer into msgpack::object instance.
+	std::string str(buffer.str());
+
+	/*
+	  Step 2. send data 
+	*/
+	SOCKET hSocket;
+	SOCKADDR_IN addr;
+
+	memset(&addr, 0x00, sizeof(addr));
+	addr.sin_family = AF_INET;
+	addr.sin_addr.s_addr = inet_addr("localhost");
+	addr.sin_port = htons(5555);
+
+	// initialise a foo and set some properties
+	//foo.set_bar("narf");
+
+	// serialise to string, this one is obvious ; )
+	std::string buf;
+	//foo.SerializeToString(&buf);
+
+	hSocket = socket(PF_INET, SOCK_DGRAM, 0);
+
+	if (connect(hSocket, (SOCKADDR *)&addr, sizeof(addr)) == SOCKET_ERROR)
+		printf("connect() error!");
+
+	send(hSocket, str.data(), str.size(), 0);
+	//send(hSocket, buf.data(), buf.size(), 0);
+
+	closesocket(hSocket);
+
+
+
+
+	/**
+		Step 3. 
+	**/
+
+	
+
+	msgpack::object_handle oh =
+		msgpack::unpack(str.data(), str.size());
+
+	// deserialized object is valid during the msgpack::object_handle instance is alive.
+	msgpack::object deserialized = oh.get();
+
+	// msgpack::object supports ostream.
+	std::cout << deserialized << std::endl;
+
+	// convert msgpack::object instance into the original type.
+	// if the type is mismatched, it throws msgpack::type_error exception.
+	msgpack::type::tuple<int, bool, std::string> dst;
+	deserialized.convert(dst);
+
+
+
+
+
+
+	return 0;
+}
