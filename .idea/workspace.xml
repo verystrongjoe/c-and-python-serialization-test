@@ -2,57 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08b6ae27-6832-4b1c-b7d3-726f4388c1be" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tcp-client.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Project5/Debug/Project5.pdb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5.sdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5.sln" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/CL.read.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/CL.write.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/Project5.lastbuildstate" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/cl.command.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/link-cvtres.read.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/link-cvtres.write.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/link-rc.read.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/link-rc.write.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/link.command.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/link.read.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/link.write.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Project5.tlog/unsuccessfulbuild" afterPath="$PROJECT_DIR$/msgpack.py" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/Source.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/foo.pb.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/vc120.idb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Debug/vc120.pdb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Project5.vcxproj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Project5.vcxproj.filters" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Project5.vcxproj.user" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/Project5.tlog/CL.read.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/Project5.tlog/CL.write.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/Project5.tlog/Project5.lastbuildstate" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/Project5.tlog/cl.command.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/Project5.tlog/link.command.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/Project5.tlog/link.read.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/Project5.tlog/link.write.1.tlog" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/Project5.tlog/unsuccessfulbuild" afterPath="$PROJECT_DIR$/tcp-server.py" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/Source.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/foo.pb.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Release/vc120.pdb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/Source.cpp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/foo.pb.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/Project5/packages.config" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/packages/protobuf.2.6.1.1/protobuf.2.6.1.1.nupkg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Project5/packages/repositories.config" afterPath="" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/addressbook.pb.cc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/addressbook.pb.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/addressbook.proto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/addressbook_pb2.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/foo.pb.cpp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/foo.pb.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/foo.proto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/protoc-2.6.1.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/protoc.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receive.py" afterPath="$PROJECT_DIR$/receive.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,8 +42,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="486">
-                <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+              <first_editor relative-caret-position="108">
+                <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -792,8 +743,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="486">
-            <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <first_editor relative-caret-position="108">
+            <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
