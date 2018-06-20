@@ -1,3 +1,5 @@
+/*
+
 // MessagePack for C++ example
 
 #include <string>
@@ -101,3 +103,5 @@ int main() {
 	}
 }
 
+
+*/

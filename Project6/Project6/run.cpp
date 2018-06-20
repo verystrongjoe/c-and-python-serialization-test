@@ -1,3 +1,4 @@
+
 /*
 sketch c++ code for socket client to send msg to its socket server
 
@@ -5,7 +6,7 @@ reference
 http://hashcode.co.kr/questions/396/millisecond%EB%8B%A8%EC%9C%84%EB%A1%9C-sleep-%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%96%B4%EC%9A%94
 https://www.binarytides.com/winsock-socket-programming-tutorial/
 https://pymotw.com/2/socket/tcp.html
-*/
+
 
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #pragma comment(lib, "Ws2_32.lib")
@@ -102,3 +103,6 @@ int main(int argc, char *argv[])
 }
 
 
+
+
+*/

@@ -8,15 +8,10 @@ int array test using msgpack
 #pragma comment(lib, "Ws2_32.lib")
 
 #include <WinSock2.h>
-
-
 #include <iostream>
 #include <sstream>
 #include <cassert>
-
-
 #include <msgpack.hpp>
-
 #include <array>
 #include <tuple>
 #include <unordered_map>
@@ -28,19 +23,19 @@ int array test using msgpack
 int main(int argc, char *argv[])
 {
 	
-	std::array<int, 5> a{ { 1, 2, 3, 4, 5 } };
+	//std::array<int, 5> a{ { 1, 2, 3, 4, 5 } };
+	//std::vector<int> a{ { 1, 2, 3, 4, 5 } };
+	//std::stringstream ss;
+	//msgpack::pack(ss, a);
 
-	std::stringstream ss;
 
-	msgpack::pack(ss, a);
+	// unpack
+	//msgpack::object_handle oh = msgpack::unpack(ss.str().data(), ss.str().size());
+	//msgpack::object obj = oh.get();
+	//std::cout << obj << std::endl;
+	//assert((obj.as<std::array<int, 5>>()) == a);
 
-	msgpack::object_handle oh = msgpack::unpack(ss.str().data(), ss.str().size());
-	msgpack::object obj = oh.get();
-
-	std::cout << obj << std::endl;
-	assert((obj.as<std::array<int, 5>>()) == a);
-
-	boolean test_send = false;
+	boolean test_send = true;
 
 	if (test_send) {
 		// initialize network
@@ -91,14 +86,27 @@ int main(int argc, char *argv[])
 			std::stringstream buffer;
 			msgpack::pack(buffer, src);
 
-			// send the buffer ...
-			buffer.seekg(0);
+			std::vector<std::vector<int>> aggData;
+			std::vector<int> data(2);
 
+			std::vector<int> a{ 1, 2};
+			std::vector<int> b{ 3, 4, 5};
+			aggData.push_back(a);
+			aggData.push_back(b);
+
+			std::stringstream ss;
+			msgpack::pack(ss, aggData);
+
+			ss.seekg(0);
+			std::string str(ss.str());
+
+			// send the buffer ...
+			//buffer.seekg(0);
 			// deserialize the buffer into msgpack::object instance.
-			std::string str(buffer.str());
+			//std::string str(buffer.str());
 
 			//Send some data
-			message = "GET / HTTP/1.1\r\n\r\n";
+			//message = "GET / HTTP/1.1\r\n\r\n";
 			if (send(s, str.data(), str.size(), 0) < 0)
 			{
 				puts("Send failed");
